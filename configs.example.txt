@@ -1,0 +1,4 @@
+smtp.mail.yahoo.com
+465
+USERNAME or EMAIL ADDRESS
+PASSWORD

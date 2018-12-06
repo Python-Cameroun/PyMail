@@ -6,10 +6,12 @@
 import smtplib
 from email.mime.text import MIMEText
 
-smtp_ssl_host = 'smtp.gmail.com'  # smtp.mail.yahoo.com
-smtp_ssl_port = 465
-username = 'USERNAME or EMAIL ADDRESS'
-password = 'PASSWORD'
+configs = open('configs.txt').readlines()
+
+smtp_ssl_host = configs[0]  # smtp.mail.yahoo.com
+smtp_ssl_port = configs[1]
+username = configs[2]
+password = configs[3]
 sender = 'ME@EXAMPLE.COM'
 targets = ['HE@EXAMPLE.COM', 'SHE@EXAMPLE.COM']
 
